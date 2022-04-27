@@ -12,6 +12,11 @@ body
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: #f4f5fa;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 .header
@@ -354,8 +359,8 @@ a
 
     .project-body
     {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .project-body img
@@ -505,8 +510,8 @@ input:enabled
 {
     .us-content
     {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .us-content iframe
