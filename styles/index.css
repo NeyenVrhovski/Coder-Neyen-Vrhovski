@@ -149,6 +149,14 @@ body
     }
 }
 
+@media (max-width: 576px)
+{
+    .banner-text-container p
+    {
+        margin: -15% 0 0 5%;
+    }
+}
+
 /* Emprendimientos */
 
 .project-title-container
@@ -270,6 +278,18 @@ body
     .form-section h3 
     {
         font-size: 3vw;
+    }
+
+    .form-section form
+    {
+        width: 40%;
+    }
+}
+
+@media (max-width: 576) {
+    .form-section form
+    {
+        width: 70%;
     }
 }
 
