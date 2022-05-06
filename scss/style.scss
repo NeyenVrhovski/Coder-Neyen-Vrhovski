@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+@import './components/_header';
+@import './components/_footer';
+@import './base/index';
+@import './base/emprendimientos';
+@import './base/nosotros';
+@import './base/brokers';
+@import './base/legales';
+
+:root
+{
+    font-size: 10px;
+}
+
+body
+{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f5fa;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}

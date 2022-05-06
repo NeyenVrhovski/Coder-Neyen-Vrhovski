@@ -1,0 +1,33 @@
+.navbar
+{
+    font-size: 2rem;
+    -webkit-box-shadow: 5px 5px 10px 1px #000000; 
+    box-shadow: 5px 5px 10px 1px #000000;
+    height: auto;
+}
+
+.logo-text
+{
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    margin: 0 0 0 15px;
+    align-items: center;
+    img{
+        width: 50px;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+.navbar-list li
+{
+    margin: 10px;
+}
+
+.header-shadow
+{
+    width: 100%;
+    height: 106.25px;
+}
