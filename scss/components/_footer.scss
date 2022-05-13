@@ -1,19 +1,19 @@
+@import '../base/variables';
+
 footer
 {
     -webkit-box-shadow: 1px -1px 15px 5px #000000; 
     box-shadow: 1px -1px 15px 5px #000000;
     h3{
         margin: 15px 0 20px 0;
-        text-decoration: underline;
-        text-decoration-color: orangered;
         font-size: 1.5vw;
+        @extend .text-decoration;
     }
 }
 
 .footer-right
 {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     h3{
         margin: 15px 0 40px 0;
@@ -42,8 +42,7 @@ footer
     }
     .footer-left, .footer-left-bot
     {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
     }
     .footer-left

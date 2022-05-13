@@ -1,3 +1,5 @@
+@import 'variables';
+
 .video
 {
     width: 100% !important;
@@ -16,25 +18,22 @@
 {
     width: 100%;
     height: auto;
-    display:flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: center;
     align-items: center;
     margin: 40px 0 20px 0;
     h3{
-        text-decoration: underline;
-        text-decoration-color: orangered;
-        font-size: 2vw;
+        font-size: map-get($font-sizes, subtitle);
+        @extend .text-decoration;
     }
     p{
-        font-size: 1vw;
+        font-size: map-get($font-sizes, text);
         margin: 0 0 20px 0;
     }
     form{
         width: 25%;
-        display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        @include flex-column;
         justify-content: space-around;
         -webkit-box-shadow: 5px 5px 10px 1px #000000; 
         box-shadow: 5px 5px 10px 1px #000000;
@@ -55,16 +54,7 @@
             font-size: 3vw;
         }
         form{
-            width: 40%;
-        }
-    }
-}
-
-@media (max-width: 576) {
-    .form-section 
-    {
-        form{
-            width: 100%;
+            width: 65%;
         }
     }
 }

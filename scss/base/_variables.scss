@@ -1,0 +1,17 @@
+$font-sizes:
+(
+    "title": 3vw,
+    "subtitle": 2vw,
+    "text": 1vw
+);
+
+.text-decoration
+{
+    text-decoration: underline;
+    text-decoration-color: orangered;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}

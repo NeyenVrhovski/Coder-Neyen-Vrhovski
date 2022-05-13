@@ -1,3 +1,5 @@
+@import '../base/variables';
+
 .navbar
 {
     font-size: 2rem;
@@ -8,8 +10,7 @@
 
 .logo-text
 {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     font-family: inherit;
     margin: 0 0 0 15px;
     align-items: center;

@@ -1,0 +1,9 @@
+1: Ponerles atributo "alt" a todas las imagenes que no lo tenian.
+
+2: Ponerles atributo "title" a todas las etiquetas multimedia.
+
+3: Agregar un "meta-description" a todos los html.
+
+4: Agregar keywords a todos los html.
+
+5: Agregar OpenGraph con todas sus propiedades a todos los html.
