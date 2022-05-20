@@ -352,4 +352,8 @@ body {
   vertical-align: baseline;
 }
 
+.disclaimer {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
