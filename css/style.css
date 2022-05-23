@@ -1,4 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap");
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f4f5fa;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.disclaimer {
+  display: none;
+}
+
 .text-decoration, .form-section h3, .project-description h2, .project-title-container h1, .info-title, .main-title, .banner-text-container p, footer h3 {
   text-decoration: underline;
   text-decoration-color: orangered;
@@ -34,11 +53,6 @@
   height: 106.25px;
 }
 
-.text-decoration, .form-section h3, .project-description h2, .project-title-container h1, .info-title, .main-title, .banner-text-container p, footer h3 {
-  text-decoration: underline;
-  text-decoration-color: orangered;
-}
-
 footer {
   -webkit-box-shadow: 1px -1px 15px 5px #000000;
   box-shadow: 1px -1px 15px 5px #000000;
@@ -46,6 +60,12 @@ footer {
 footer h3 {
   margin: 15px 0 20px 0;
   font-size: 1.5vw;
+}
+@media screen and (max-width: 768px) {
+  footer h3 {
+    font-size: 2vw;
+    white-space: nowrap;
+  }
 }
 
 .footer-right {
@@ -64,35 +84,31 @@ footer h3 {
   width: 100%;
   height: 100%;
 }
-
-.footer-icons-container img {
-  margin: 0 2vw 0 0;
-}
-
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .footer-right {
     display: none;
   }
+}
 
-  .footer-left, .footer-left-bot {
+@media screen and (max-width: 576px) {
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 2% 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-left-bot {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
 
-  .footer-left {
-    margin: 0 0 2% 0;
-  }
-}
-@media (max-width: 768px) {
-  footer h3 {
-    font-size: 2vw;
-    white-space: nowrap;
-  }
-}
-.text-decoration, .form-section h3, .project-description h2, .project-title-container h1, .info-title, .main-title, .banner-text-container p, footer h3 {
-  text-decoration: underline;
-  text-decoration-color: orangered;
+.footer-icons-container img {
+  margin: 0 2vw 0 0;
 }
 
 .banner-main-container {
@@ -134,15 +150,30 @@ footer h3 {
   font-size: 3vw;
   margin: 0 0 4vw 0;
 }
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 5vw;
+  }
+}
 
 .info-title {
   font-size: 2vw;
   white-space: nowrap;
   margin: 0 0 2vw 0;
 }
+@media screen and (max-width: 768px) {
+  .info-title {
+    font-size: 4vw;
+  }
+}
 
 .info-text {
   font-size: 1vw;
+}
+@media screen and (max-width: 768px) {
+  .info-text {
+    font-size: 3vw;
+  }
 }
 
 .info-container {
@@ -150,24 +181,6 @@ footer h3 {
   margin: 0 0 7vw 0;
   display: flex;
   flex-direction: column;
-}
-
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 5vw;
-  }
-
-  .info-title {
-    font-size: 4vw;
-  }
-
-  .info-text {
-    font-size: 3vw;
-  }
-}
-.text-decoration, .form-section h3, .project-description h2, .project-title-container h1, footer h3, .banner-text-container p, .main-title, .info-title {
-  text-decoration: underline;
-  text-decoration-color: orangered;
 }
 
 .project-title-container {
@@ -180,6 +193,11 @@ footer h3 {
   font-size: 3vw;
   margin: 2vw 0 2vw 0;
 }
+@media screen and (max-width: 768px) {
+  .project-title-container h1 {
+    font-size: 4vw;
+  }
+}
 
 .project-description {
   display: flex;
@@ -190,57 +208,51 @@ footer h3 {
   font-size: 2vw;
   margin: 0 0 2vw 0;
 }
+@media screen and (max-width: 768px) {
+  .project-description h2 {
+    font-size: 3vw;
+    margin: 3vw 0 2vw;
+  }
+}
 .project-description p {
   font-size: 1vw;
+}
+@media screen and (max-width: 768px) {
+  .project-description p {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .project-description p {
+    font-size: 3vw;
+  }
 }
 
 .last-project {
   margin: 0 0 3vw 0;
 }
 
-@media (max-width: 768px) {
-  .project-title-container h1 {
-    font-size: 4vw;
-  }
-
-  .project-description h2 {
-    font-size: 3vw;
-    margin: 3vw 0 2vw;
-  }
-
-  .project-description p {
-    font-size: 2vw;
-  }
-}
 .img-container {
   display: flex;
   justify-content: center;
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .project-img {
     width: 60%;
   }
-
-  .project-description p {
-    font-size: 3vw;
-  }
-}
-.text-decoration, .form-section h3, footer h3, .banner-text-container p, .main-title, .info-title, .project-title-container h1, .project-description h2 {
-  text-decoration: underline;
-  text-decoration-color: orangered;
 }
 
 .video {
   width: 100% !important;
   height: 100% !important;
 }
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .video {
     height: 300px !important;
   }
 }
+
 .form-section {
   width: 100%;
   height: auto;
@@ -253,9 +265,19 @@ footer h3 {
 .form-section h3 {
   font-size: 2vw;
 }
+@media screen and (max-width: 768px) {
+  .form-section h3 {
+    font-size: 3vw;
+  }
+}
 .form-section p {
   font-size: 1vw;
   margin: 0 0 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .form-section p {
+    font-size: 2vw;
+  }
 }
 .form-section form {
   width: 25%;
@@ -269,18 +291,12 @@ footer h3 {
   border-radius: 5px;
   margin: 0 0 40px 0;
 }
-
-@media (max-width: 768px) {
-  .form-section p {
-    font-size: 2vw;
-  }
-  .form-section h3 {
-    font-size: 3vw;
-  }
+@media screen and (max-width: 768px) {
   .form-section form {
     width: 65%;
   }
 }
+
 .broker-container {
   margin: 5% 0 15% 0;
 }
@@ -305,6 +321,12 @@ footer h3 {
   height: 100% !important;
 }
 
+@media screen and (max-width: 768px) {
+  .responsive-map {
+    margin: 0 0 7% 0;
+  }
+}
+
 .pdf-container {
   width: 100%;
   height: auto;
@@ -312,48 +334,20 @@ footer h3 {
   justify-content: center;
   margin: 2% 0 10% 0;
 }
-.pdf-container a {
-  width: 7%;
-  height: 8%;
-  border-radius: 5px;
-}
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .pdf-container {
     margin: 17% 0 10% 0;
   }
-
-  .responsive-map {
-    margin: 0 0 7% 0;
-  }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .pdf-container {
     margin: 45% 0 10% 0;
   }
 }
-.text-decoration, footer h3, .banner-text-container p, .main-title, .info-title, .project-title-container h1, .project-description h2, .form-section h3 {
-  text-decoration: underline;
-  text-decoration-color: orangered;
-}
-
-:root {
-  font-size: 10px;
-}
-
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  background-color: #f4f5fa;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-.disclaimer {
-  display: none;
+.pdf-container a {
+  width: 7%;
+  height: 8%;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

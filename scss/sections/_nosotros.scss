@@ -1,15 +1,8 @@
-@import 'variables';
-
 .video
 {
     width: 100% !important;
     height: 100% !important;
-}
-
-@media (max-width:768px)
-{
-    .video
-    {
+    @include Medium{
         height: 300px !important;
     }
 }
@@ -25,10 +18,16 @@
     h3{
         font-size: map-get($font-sizes, subtitle);
         @extend .text-decoration;
+        @include Medium{
+            font-size: 3vw;
+        }
     }
     p{
         font-size: map-get($font-sizes, text);
         margin: 0 0 20px 0;
+        @include Medium{
+            font-size: 2vw;
+        }
     }
     form{
         width: 25%;
@@ -40,20 +39,7 @@
         padding: 5px;
         border-radius: 5px;
         margin: 0 0 40px 0;
-    }
-}
-
-@media (max-width: 768px)
-{
-    .form-section 
-    {
-        p{
-            font-size: 2vw;
-        }
-        h3{
-            font-size: 3vw;
-        }
-        form{
+        @include Medium{
             width: 65%;
         }
     }
